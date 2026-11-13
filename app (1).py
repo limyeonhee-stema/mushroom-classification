@@ -3,6 +3,12 @@ import pandas as pd
 import pickle
 import numpy as np
 
+import os
+
+print(os.getcwd())
+print(os.path.exists('mushroom_model.pkl'))
+print(os.path.exists('encoders.pkl'))
+
 st.set_page_config(page_title="Mushroom Classifier", layout="centered")
 
 st.title("🍄 Mushroom Edibility Classifier")
