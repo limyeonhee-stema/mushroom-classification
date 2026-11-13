@@ -30,7 +30,7 @@ def mushroom_selectbox(feature, label):
     return st.selectbox(
         label,
         options=codes,
-        format_func=lambda x: CODE_TO_NAME[feature][x]
+        format_func=lambda x: CODE_TO_NAME[x][feature]
     )
 
 # Construct the input form
