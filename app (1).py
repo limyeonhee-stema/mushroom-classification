@@ -10,10 +10,10 @@ st.write("Enter the traits of your mushroom to check if it is **Edible** or **Po
 
 # Load the saved model and encoders
 with open('mushroom_model.pkl', 'rb') as model_file:
-    model = pickle.load('mushroom_model.pkl')
+    model = pickle.load(model_file)
 
 with open('encoders.pkl', 'rb') as encoders_file:
-    encoders = pickle.load('encoders.pkl')
+    encoders = pickle.load(encoders_file)
 
 # Define the features our model expects
 features = [
