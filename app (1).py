@@ -25,7 +25,7 @@ features = [
     'ring-number', 'ring-type', 'spore-print-color', 'population', 'habitat'
 ]
 def mushroom_selectbox(feature, label):
-    codes = list(NAME_TO_CODE[feature])
+    codes = list(NAME_TO_CODE.get([feature]))
 
     return st.selectbox(
         label,
