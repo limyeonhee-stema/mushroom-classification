@@ -25,12 +25,12 @@ features = [
     'ring-number', 'ring-type', 'spore-print-color', 'population', 'habitat'
 ]
 def mushroom_selectbox(feature, label):
-    codes = list(CODE_TO_NAME[feature])
+    codes = list(CODE_TO_NAME[feature[cap-shape])
 
     return st.selectbox(
         label,
         options=codes,
-        format_func=lambda x: CODE_TO_NAME[x]
+        format_func=lambda x: CODE_TO_NAME[features][x]
     )
 
 # Construct the input form
